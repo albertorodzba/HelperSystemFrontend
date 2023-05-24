@@ -1,27 +1,33 @@
 .navbar {
     align-items: center;
-    background-color: var(--navbar-color);
-    color: var(--white-text);
+    /* background-color: var(--navbar-color); */
+    color: var(--black-text);
+    /* border-bottom: 2px solid var(--black-text); */
     display: flex;
     justify-content: space-between;
-    height: 6rem;
+    height: 7rem; 
     padding: 1.5em;
-    ;
     width: 100%;
 
 }
 
-.navbar>.options {
+.logo{
+    height: 5rem;
+}
+
+.navbar>.general-options {
+
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+
 }
 
-.navbar> .options> .option {
+.navbar> .general-options> .option, .user-option {
     cursor: pointer;
     margin-right: 1em;
 }
 
-.navbar > .options > .option:last-child{
+.navbar > .general-options > .option:last-child, user-option:last-child{
     margin-right: 0em;
 }

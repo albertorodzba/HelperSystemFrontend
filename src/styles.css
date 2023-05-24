@@ -1,11 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
 :root{
     --navbar-color: #726CA8;
+    --card-color: #726ca8c2;
     --white-text: #eaeaea;
+    --black-text: #6b6b6b;
+    --padding-left-right: 1.5em;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
 }
