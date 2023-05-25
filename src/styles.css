@@ -7,11 +7,26 @@
     --white-text: #eaeaea;
     --black-text: #6b6b6b;
     --padding-left-right: 1.5em;
+    --box-shadow-navbar: rgb(217, 217, 217);
+    --box-shadow: #a8a8ad;
+    --screen-small: 620px;
+    --screen-medium: 860px;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*GOOGLE ICONS*/
+
+.material-icons-outlined {
+  vertical-align: text-bottom;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }

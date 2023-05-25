@@ -1,4 +1,4 @@
-.main-container{
+.main-container {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@
     padding-top: 2rem;
 }
 
-.title{
+.title {
     color: var(--black-text);
     font-size: 24px;
     font-weight: 500;
@@ -15,28 +15,31 @@
 }
 
 
-.jobs-pictures{
+.jobs-pictures {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2em;
     row-gap: 2em;
 }
-.jobs-pictures > *{
+
+.jobs-pictures>* {
     min-width: 0;
     min-height: 0;
 }
 
-.jobs-pictures > .job-card > .card-img{
+.jobs-pictures>.job-card>.card-img {
     height: 100%;
 
-}   
-.job-card{
+}
+
+.job-card {
+    box-shadow: 4px 4px 15px var(--box-shadow);
     height: 10rem;
     position: relative;
     transition: all .3s ease-in-out;
 }
 
-.job-card > .card-text{
+.job-card>.card-text {
     align-items: center;
     color: var(--white-text);
     background-color: var(--card-color);
@@ -44,12 +47,60 @@
     display: flex;
     height: 3rem;
     justify-content: center;
-    left:0;
+    left: 0;
     right: 0;
     position: absolute;
-    
+
 }
 
 .job-card:hover {
-  transform: scale(1.01);
+    transform: scale(1.05);
+}
+
+/*additional info*/
+.contact-info {
+    align-items: center;
+    color: var(--black-text);
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    margin-bottom: 1.5em;
+}
+
+
+.contact-info>a>img {
+    cursor: pointer;
+    height: 9rem;
+    transition: transform 0.3s ease-in;
+}
+
+.contact-info>a>img:hover{
+    transform: scale(1.05);
+}
+
+.contact-info > h3{
+    margin-bottom: 0.5em;
+}
+
+.contact-info>p:last-child {
+    font-size: 10px;
+}
+
+.contact-info>p:nth-last-child(2) {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/*Responsive code*/
+
+@media (max-width: 860px) {
+    .jobs-pictures {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 620px) {
+    .jobs-pictures {
+        grid-template-columns: 1fr;
+    }
 }

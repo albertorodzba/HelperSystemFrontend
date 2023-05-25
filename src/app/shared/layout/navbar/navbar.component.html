@@ -1,15 +1,30 @@
-<div class="navbar">
+<div class="navbar" #navbar>
     <!-- <h2>HELPERMX</h2> -->
     <img src="../../../../assets/images/helperlogoalto1.webp" alt="Problema al cargar la imagen" class="logo">
-    <ul class="general-options">
-        <li class="option">Inicio</li>
+
+
+
+    <ul class="general-options" #generalOptionsFirst>
+        <li class="option"><span class="material-icons-outlined">home</span>Inicio</li>
+        <hr />
         <li class="option">|</li>
-        <li class="option">Trabaja con nosotros</li>
+        <li class="option"><span class="material-icons-outlined">work_outline</span>Trabaja con nosotros</li>
+        <hr/>
     </ul>
 
-    <ul class="general-options">
-        <li class="user-option">Inicia sesión</li>
+    <ul class="general-options" #generalOptionsSecond>
+        <li class="option"><span class="material-icons-outlined">login</span>Inicia sesión</li>
         <li class="option">|</li>
-        <li class="user-option">Registrate</li>
+        <hr />
+        <li class="option"><span class="material-icons-outlined">assignment_ind</span>Registrate</li>
     </ul>
+
+    <div [ngClass]="{'dropdown-visible': isMenuOpen == true}" class="dropdown" #dropdown ></div>
+    <div class="menu" (click)="toggleMenu()">
+        <span class="material-icons-outlined menu-icon">
+            menu
+        </span>
+
+        <p>Menú</p>
+    </div>
 </div>

@@ -5,29 +5,115 @@
     /* border-bottom: 2px solid var(--black-text); */
     display: flex;
     justify-content: space-between;
-    height: 7rem; 
+    height: 7rem;
     padding: 1.5em;
     width: 100%;
 
+    box-shadow: 1px 1px 7px var(--box-shadow-navbar) ;
 }
 
-.logo{
+.logo {
     height: 5rem;
 }
 
-.navbar>.general-options {
+
+.general-options {
 
     display: flex;
     justify-content: space-around;
     list-style-type: none;
 
 }
-
-.navbar> .general-options> .option, .user-option {
-    cursor: pointer;
-    margin-right: 1em;
+.general-options > .option > span{
+    margin-right: 0.5em;
 }
 
-.navbar > .general-options > .option:last-child, user-option:last-child{
-    margin-right: 0em;
+hr {
+    display: none;
+}
+
+.general-options>.option,
+.option {
+    cursor: pointer;
+    margin-right: 1em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.general-options>.option:last-child,
+.option:last-child {
+    margin-right: 0em;  
+}
+
+.option:hover{
+    transform: scale(1.05);
+}
+
+.menu {
+    display: none;
+}
+
+
+@media (max-width: 910px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .general-options {
+        display: block;
+    }
+
+    .general-options>li:nth-last-child(3) {
+        display: none;
+    }
+
+    .general-options>.option,
+    .option {
+        margin-right: 0em;
+    }
+
+    .general-options {
+        display: flex;
+        flex-direction: column;
+    }
+
+    hr {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .menu {
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        transition: transform .3s ease-in-out;
+    }
+
+    .menu:hover {
+        transform: scale(1.05);
+    }
+
+    .menu-icon {
+        font-size: 30px;
+
+    }
+
+    .dropdown {
+        background-color: white;
+        border-radius: 1px;
+        box-shadow: 2px 1px 5px var(--box-shadow-navbar);
+        display: flex;
+        flex-direction: column;
+        padding: 0.8em;
+        position: absolute;
+        right: 1.5em;
+        top: 6em;
+        width: 16rem;
+        z-index: 99;
+        display: none;
+    }
+
+    .dropdown-visible{
+        display: block;
+    }
+  
 }
