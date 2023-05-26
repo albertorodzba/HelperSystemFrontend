@@ -51,7 +51,9 @@ hr {
 .menu {
     display: none;
 }
-
+.dropdown{
+    display: none;
+}
 
 @media (max-width: 910px) {
     .navbar {
@@ -109,11 +111,11 @@ hr {
         top: 6em;
         width: 16rem;
         z-index: 99;
-        display: none;
+        visibility: hidden;
     }
 
     .dropdown-visible{
-        display: block;
+       visibility: visible;
     }
   
 }

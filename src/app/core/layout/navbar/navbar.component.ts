@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, Host, HostListener, ViewChild } from '@angular/core';
-import { discardPeriodicTasks } from '@angular/core/testing';
+
 
 @Component({
   selector: 'app-navbar',
