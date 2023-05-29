@@ -1,0 +1,31 @@
+.page-main-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-bar{
+    border-radius: 50px;
+    height: 3rem;
+    box-shadow: inset 2px 2px 2px 1px var(--box-shadow);
+    width: 80%;
+
+}
+.progress{
+    background-color: var(--progress-bar-color);
+    border-radius: inherit;
+    height: inherit;
+    width: 80%;
+ 
+}
+.progress::before{
+    transform: rotate(45deg);
+}
+
+personal-info-form, medical-info-form, work-preferences-form, work-experience-references-form{
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+
+    /*PONER EL CONTENIDO A UN MISMO TAMAÑO*/
+}

@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     height: 7rem;
-    padding: 1.5em;
+    padding: var(--padding-left-right);
     width: 100%;
 
     box-shadow: 1px 1px 7px var(--box-shadow-navbar) ;

@@ -4,7 +4,7 @@ import { ApplicantRegisterComponent } from './pages/applicant-register/applicant
 
 const routes: Routes = [
   {
-    path:'applicant-register',
+    path:'register',
     component: ApplicantRegisterComponent
   }
 ];

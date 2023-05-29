@@ -6,11 +6,13 @@
     --card-color: #726ca8c2;
     --white-text: #eaeaea;
     --black-text: #6b6b6b;
-    --padding-left-right: 1.5em;
+    --padding-left-right: 3em;
+    --margin-left-right: 3em;
     --box-shadow-navbar: rgb(217, 217, 217);
     --box-shadow: #a8a8ad;
     --screen-small: 620px;
     --screen-medium: 860px;
+    --progress-bar-color:#726ca8c2;
 }
 
 *{
@@ -29,4 +31,10 @@
   'wght' 400,
   'GRAD' 0,
   'opsz' 48
+}
+
+
+.page-main-container{
+  margin: var(--margin-left-right);
+  width: 100%;
 }

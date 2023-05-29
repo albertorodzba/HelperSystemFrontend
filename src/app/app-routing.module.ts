@@ -5,7 +5,11 @@ import { HomeComponent } from './modules/home/pages/home/home.component';
 const routes: Routes = [
 {
   path: '',
-  loadChildren: () => import('./modules/home/home.module').then(module => module.HomeModule)
+  component: HomeComponent
+},
+{
+  path:'applicant',
+  loadChildren: () => import('./modules/applicant/applicant.module').then(module=> module.ApplicantModule)
 }
 ];
 
