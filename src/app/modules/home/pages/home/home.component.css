@@ -2,8 +2,8 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding-left: var(--padding-left-right);
-  padding-top: 2rem;
+  padding:var(--space-content-border-vertical) var(--space-content-border-horizontal);
+
 }
 
 .title {
@@ -11,36 +11,37 @@
   font-size: 24px;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
-.jobs-pictures {
+/*cards-container*/
+.cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2em;
   row-gap: 2em;
 }
 
-.jobs-pictures > * {
+.cards-container > * {
   min-width: 0;
   min-height: 0;
 }
 
-.jobs-pictures > .job-card > .card-img {
+.card-img {
   height: 100%;
 }
 
-.job-card {
+.card {
   box-shadow: 4px 4px 15px var(--box-shadow);
   height: 10rem;
   position: relative;
   transition: all 0.3s ease-in-out;
 }
 
-.job-card > .card-text {
+.card .card-text {
   align-items: center;
   color: var(--white-text);
-  background-color: var(--card-color);
+  background-color: var(--main-color-opacity);
   bottom: 0rem;
   display: flex;
   height: 3rem;
@@ -50,11 +51,15 @@
   position: absolute;
 }
 
-.job-card:hover {
+.card-text p{
+  color: var(--white-text);
+}
+
+.card:hover {
   transform: scale(1.05);
 }
 
-/*additional info*/
+/********CONTACT INFO CLASS********/
 .contact-info {
   align-items: center;
   color: var(--black-text);
@@ -64,39 +69,39 @@
   margin-bottom: 1.5em;
 }
 
-.contact-info > a > img {
+.contact-info a img {
   cursor: pointer;
   height: 9rem;
   transition: transform 0.3s ease-in;
 }
 
-.contact-info > a > img:hover {
+.contact-info a img:hover {
   transform: scale(1.05);
 }
 
-.contact-info > h3 {
+.contact-info h3 {
   margin-bottom: 0.5em;
 }
 
-.contact-info > p:last-child {
+.contact-info  p:last-child {
   font-size: 10px;
 }
 
-.contact-info > p:nth-last-child(2) {
+.contact-info p:nth-last-child(2) {
   font-size: 30px;
   font-weight: 300;
 }
 
-/*Responsive code*/
+/*-*********RESPONSIVE CODE ********/
 
 @media (max-width: 860px) {
-  .jobs-pictures {
+  .cards-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 620px) {
-  .jobs-pictures {
+  .cards-container {
     grid-template-columns: 1fr;
   }
 }

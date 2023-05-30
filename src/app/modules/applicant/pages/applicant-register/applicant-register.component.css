@@ -1,31 +1,85 @@
 .page-main-container{
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: center;
+    padding: var(--space-top-bottom) var(--space-content-border-horizontal);
+    width: 100%;
+}
+
+.page-main-container .flex-center
+{
     align-items: center;
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
+
 
 .progress-bar{
     border-radius: 50px;
-    height: 1rem;
     box-shadow: inset 2px 2px 2px 1px var(--box-shadow);
-    width: 60%;
+    height: 1rem;
+    margin-bottom: var(--space-top-bottom);
+    width: 100%;
 
 }
 .progress{
-    background-color: var(--progress-bar-color);
+    background-color: var(--main-color);
     border-radius: inherit;
     height: inherit;
-    width: 80%;
- 
 }
-.progress::before{
-    transform: rotate(45deg);
-}
+
 
 personal-info-form, medical-info-form, work-preferences-form, work-experience-references-form{
+    margin: var(--space-top-bottom) 0;
     width: 100%;  
-    display: flex;
-    justify-content: center;
+    /*affects .compnent-main-container inside*/
+    /* background-color: blue; */
+}
+medical-info-form, work-preferences-form, work-experience-references-form{
 
-    /*PONER EL CONTENIDO A UN MISMO TAMAÑO*/
+    display: none;
+}
+
+.buttons{
+    display: grid;
+    column-gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+/*"previous" button style*/
+.previous{
+    color: var(--black-text);
+    background-color: white;
+}
+
+.form-visible{
+    display: block;
+    animation: 0.5s ease-in-out normal entrance;
+}
+
+
+
+.form-invisible{
+    display: none;
+}
+
+@keyframes entrance {
+    from {
+      transform: translateX(-110%);
+        opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+/*RESPONSIVE CODE*/
+@media (max-width: 910px) {
+    .page-main-container .flex-center{
+        width: 100%;
+    }
 }

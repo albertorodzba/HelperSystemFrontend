@@ -1,15 +1,25 @@
 <div class="page-main-container">
-    
-    <div class="progress-bar">
-        <div class="progress"></div>
+  <div class="flex-center">
+    <div class="progress-bar" >
+      <div class="progress" #progressBar></div>
     </div>
-    
-    <h1>Registro</h1>
-    <p>Esta información servirá para crear tu curriculum virtual y poder encontrar el mejor trabajo para ti</p>
-    
-    <personal-info-form></personal-info-form>
-    <medical-info-form></medical-info-form>
-    <work-preferences-form></work-preferences-form>
-    <work-experience-references-form></work-experience-references-form>
+    <!-- <p>{{progress}}</p> -->
 
+    <h1>Registro</h1>
+    <p>
+      Esta información servirá para crear tu curriculum virtual y poder
+      encontrar el mejor trabajo para ti
+    </p>
+
+    <personal-info-form [ngClass]="{'form-visible ': currentForm == 1, 'form-invisible': currentForm !== 1}"></personal-info-form>
+    <medical-info-form  [ngClass]="{'form-visible ': currentForm == 2}"></medical-info-form>
+    <work-preferences-form  [ngClass]="{'form-visible ': currentForm == 3}"></work-preferences-form>
+    <work-experience-references-form [ngClass]="{'form-visible ': currentForm == 4}"></work-experience-references-form>
+    
+    <div class="buttons">
+        <button (click)="previousForm()" type="button" class="previous">Atrás</button>
+        <button (click)="nextForm()" type="button" class="next">Siguiente</button>
+    </div>
+
+</div>
 </div>

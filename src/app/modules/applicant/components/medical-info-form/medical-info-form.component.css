@@ -1,0 +1,12 @@
+.options-container{
+    display: flex;
+}
+
+.options-container button{
+    color: var(--black-text);
+    background-color: white;
+    margin-left: 1em;
+    width: fit-content;
+    height: fit-content;
+}
+

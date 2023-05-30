@@ -1,0 +1,11 @@
+.component-main-container{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.personal-info-form{
+    /* background-color: blueviolet; */
+    /* padding: var(--padding-forms); */
+    width: 100%;
+}
