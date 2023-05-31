@@ -61,6 +61,7 @@ select:focus {
 
 button {
   background-color: var(--main-color);
+  
   cursor: pointer;
   color:var(--white-text);
 
@@ -69,7 +70,8 @@ button {
 button:hover{
   background-color: white;
   border: 2.5px solid var(--main-color);
-  color: var(--black-text)
+  color: var(--black-text);
+  margin: -1px;
 }
 
 textarea {

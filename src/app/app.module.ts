@@ -9,15 +9,17 @@ import { ApplicantModule } from './modules/applicant/applicant.module';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     
-    ApplicantModule,
+
     CoreModule
   ],
   providers: [],

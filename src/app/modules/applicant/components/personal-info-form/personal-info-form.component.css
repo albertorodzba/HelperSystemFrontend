@@ -1,11 +1,13 @@
-.component-main-container{
-    /* background-color: aqua; */
+.options-container{
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-wrap: wrap;
 }
-.personal-info-form{
-    /* background-color: blueviolet; */
-    /* padding: var(--padding-forms); */
-    width: 100%;
+
+.options-container button{
+    color: var(--black-text);
+    background-color: white;
+    margin: 1em 1em 0 0;
+    white-space:nowrap;
+    width: fit-content;
+    height: fit-content;
 }
