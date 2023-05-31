@@ -1,8 +1,7 @@
 .page-main-container{
-    /* background-color: burlywood; */
     display: flex;
     justify-content: center;
-    padding: var(--space-top-bottom) var(--space-content-border-horizontal);
+    /* padding: var(--space-top-bottom) var(--space-content-border-horizontal); */
     width: 100%;
 }
 
@@ -31,7 +30,7 @@
 
 
 personal-info-form, medical-info-form, work-preferences-form, work-experience-references-form{
-    margin: var(--space-top-bottom) 0;
+    margin-top: var(--space-top-bottom);
     width: 100%;  
     /*affects .compnent-main-container inside*/
     /* background-color: blue; */
@@ -40,6 +39,8 @@ medical-info-form, work-preferences-form, work-experience-references-form{
 
     display: none;
 }
+
+
 
 .buttons{
     display: grid;
@@ -50,16 +51,14 @@ medical-info-form, work-preferences-form, work-experience-references-form{
 
 /*"previous" button style*/
 .previous{
-    color: var(--black-text);
-    background-color: white;
+    color: var(--black);
+    background-color: var(--default-background);
 }
 
 .form-visible{
     display: block;
     animation: 0.5s ease-in-out normal entrance;
 }
-
-
 
 .form-invisible{
     display: none;

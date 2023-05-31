@@ -4,7 +4,7 @@
 
 
 
-    <ul class="general-options" #generalOptionsFirst>
+    <ul class="menu-options" #generalOptionsFirst>
         <li class="option" [routerLink]="''"><span class="material-icons-outlined" >home</span>Inicio</li>
         <hr />
         <li class="option">|</li>
@@ -12,11 +12,11 @@
         <hr/>
     </ul>
 
-    <ul class="general-options" #generalOptionsSecond>
-        <li class="option" [routerLink]="'auth/login'"><span class="material-icons-outlined">login</span>Inicia sesión</li>
+    <ul class="menu-options" #generalOptionsSecond>
+        <li class="option" [routerLink]="'auth/signin'"><span class="material-icons-outlined">login</span>Inicia sesión</li>
         <li class="option">|</li>
         <hr />
-        <li class="option"><span class="material-icons-outlined">assignment_ind</span>Registrate</li>
+        <li class="option" [routerLink]="'auth/signup'"><span class="material-icons-outlined">assignment_ind</span>Registrate</li>
     </ul>
 
     <div [ngClass]="{'dropdown-visible': isMenuOpen == true}" class="dropdown" #dropdown ></div>

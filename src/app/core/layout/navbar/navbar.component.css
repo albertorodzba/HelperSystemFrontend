@@ -1,15 +1,12 @@
 .navbar {
   align-items: center;
-  /* background-color: var(--navbar-color); */
-  color: var(--black-text);
-  /* border-bottom: 2px solid var(--black-text); */
+  color: var(--black);
   display: flex;
   justify-content: space-between;
   height: 7rem;
   padding: 0 var(--space-content-border-horizontal);
   width: 100%;
-
-  box-shadow: 1px 1px 7px var(--box-shadow-navbar);
+  box-shadow: 1px 1px 7px var(--box-shadow);
 }
 
 .logo {
@@ -17,12 +14,12 @@
 }
 
 /*the different options available on navbar*/
-.general-options {
+.menu-options {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
 }
-.general-options  .option  span {
+.menu-options  .option  span {
   margin-right: 0.5em;
 }
 
@@ -30,13 +27,13 @@ hr {
   display: none;
 }
 
-.general-options .option {
+.menu-options .option {
   cursor: pointer;
   margin-right: 1em;
   transition: transform 0.3s ease-in-out;
 }
 
-.general-options .option:last-child {
+.menu-options .option:last-child {
   margin-right: 0;
 }
 
@@ -58,15 +55,15 @@ hr {
   }
 
 
-  .general-options li:nth-last-child(3) {
+  .menu-options li:nth-last-child(3) {
     display: none;
   }
 
-  .general-options > .option{
+  .menu-options > .option{
     margin-right: 0;
   }
 
-  .general-options {
+  .menu-options {
     display: flex;
     flex-direction: column;
   }
@@ -93,9 +90,9 @@ hr {
 
   /*dropdown is not displayed when menu button is not pressed*/
   .dropdown {
-    background-color: white;
+    background-color: var(--default-background);
     border-radius: 1px;
-    box-shadow: 2px 1px 5px var(--box-shadow-navbar);
+    box-shadow: 2px 1px 5px var(--box-shadow);
     display: flex;
     flex-direction: column;
     padding: 0.8em;

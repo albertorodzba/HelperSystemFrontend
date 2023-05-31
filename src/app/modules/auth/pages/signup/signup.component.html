@@ -1,0 +1,26 @@
+<div class="page-main-container">
+    <div class="flex-container">
+      <img
+        src="../../../../../assets/images/helperlogoalto1.webp"
+        alt="HelperMX"
+      />
+  
+      <form action="" autocomplete="off" class="signin-form">
+        <div class="input-field">
+          <label for="username">Usuario o correo</label>
+          <input id="username" placeholder="UsuarioHelper" type="text" />
+        </div>
+        <div class="input-field">
+          <label for="password">Contraseña</label>
+          <input id="password" placeholder="contraseña" type="password" />
+        </div>
+        <div class="input-field">
+            <label for="password-confirmation">Escribe una vez más tu contraseña</label>
+            <input id="password-confirmation" placeholder="contraseña" type="password" />
+          </div>
+        <button type="submit">Registrarse</button>
+        <a [routerLink]="'/auth/signin'">¿Ya tienes una cuenta? Haz click aquí para ingresar</a>
+      </form>
+    </div>
+  </div>
+  
