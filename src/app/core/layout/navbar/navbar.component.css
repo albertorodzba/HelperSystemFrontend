@@ -1,4 +1,4 @@
-
+/* 
 
 .navbar {
   align-items: center;
@@ -15,7 +15,7 @@
   height: 5rem;
 }
 
-/*the different options available on navbar*/
+
 .menu-options {
   display: flex;
   justify-content: space-around;
@@ -90,7 +90,7 @@ hr {
     font-size: 30px;
   }
 
-  /*dropdown is not displayed when menu button is not pressed*/
+
   .dropdown {
     background-color: var(--default-background);
     border-radius: 1px;
@@ -106,8 +106,8 @@ hr {
     display: none;
   }
 
-  /*when menu button is pressed dropdown is displayed*/
+
   .dropdown-visible {
     display: block;
   }
-}
+} */

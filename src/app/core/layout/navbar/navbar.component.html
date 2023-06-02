@@ -1,30 +1,30 @@
-<div class="navbar" #navbar>
+<nav class="" #navbar>
     <!-- <h2>HELPERMX</h2> -->
-    <img src="/assets/images/helperlogoalto.png"  alt="Problema al cargar la imagen" class="logo">
+    <img src="/assets/images/helperlogoalto.png"  alt="Problema al cargar la imagen" class="">
 
 
 
-    <ul class="menu-options" #generalOptionsFirst>
-        <li class="option" [routerLink]="''"><span class="material-icons-outlined" >home</span>Inicio</li>
+    <ul class="" #generalOptionsFirst>
+        <li class="" [routerLink]="''"><span class="material-icons-outlined" >home</span>Inicio</li>
         <hr />
-        <li class="option">|</li>
-        <li class="option" [routerLink]="'/applicant/register'"><span class="material-icons-outlined">work_outline</span>¿Buscas trabajo?</li>
+        <li class="">|</li>
+        <li class="" [routerLink]="'/applicant/register'"><span class="material-icons-outlined">work_outline</span>¿Buscas trabajo?</li>
         <hr/>
     </ul>
 
-    <ul class="menu-options" #generalOptionsSecond>
-        <li class="option" [routerLink]="'/auth/signin'"><span class="material-icons-outlined">login</span>Inicia sesión</li>
-        <li class="option">|</li>
+    <ul class="" #generalOptionsSecond>
+        <li class="" [routerLink]="'/auth/signin'"><span class="material-icons-outlined">login</span>Inicia sesión</li>
+        <li class="">|</li>
         <hr />
-        <li class="option" [routerLink]="'/auth/signup'"><span class="material-icons-outlined">assignment_ind</span>Registrate</li>
+        <li class="" [routerLink]="'/auth/signup'"><span class="material-icons-outlined">assignment_ind</span>Registrate</li>
     </ul>
 
-    <div [ngClass]="{'dropdown-visible': isMenuOpen == true}" class="dropdown" #dropdown ></div>
-    <div class="menu" (click)="toggleMenu()">
+    <div [ngClass]="{'dropdown-visible': isMenuOpen == true}" class="" #dropdown ></div>
+    <div class="" (click)="toggleMenu()">
         <span class="material-icons-outlined menu-icon">
             menu
         </span>
 
         <p>Menú</p>
     </div>
-</div>
+</nav>

@@ -1,23 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
-
+/*
 :root {
-  --black: #585858;
-  --box-shadow: rgb(217, 217, 217);
-  --card-main-color: #726ca8c2;/*tiene opacidad*/
-  --dark-main-color: #605b8b;/*For fonts*/
+  --dark-main-color: #605b8b;
   --default-background: white;
-  /* --box-shadow: #a8a8ad; */
-  --main-color: #726ca8; /*backgrounds, borders, outlines*/
-  --light-main-color: #908cb8; /*for change background color on hover*/
+  --main-color: #726ca8;
+  --light-main-color: #908cb8; 
   --padding-input: 1em;
-  --space-top-bottom: 3em; /*for top, bottom or both paddings/margins*/
-  --space-left-right: 3em;/*for left, right or both paddings/margins*/
-  --space-content-border-horizontal: 32px;/*for space between the last element and screen border*/
-  --space-content-border-vertical: 24px;/*for space between the last element and screen border*/
+  --space-top-bottom: 3em; 
+  --space-left-right: 3em;
+  --space-content-border-horizontal: 32px;
+  --space-content-border-vertical: 24px;
   --screen-small: 620px;
   --screen-medium: 910px;
   --white: #e6e6e6;
+}
+*/
+
+:root{
+  /* --background-color: #f8f8ff; */
+  --background-color: white;
+
+  --black: #282828;
+  --white: #e6e6e6;
+  --padding-X: 3em;
+  --padding-Y: 3em;
+  --primary-color: #726ca8;
+  --primary-color-subtle: #908cb8;
+  --primary-color-emphasis: #605b8b;
+  --font-size-standard: 16px;
+  --font-size-medium: 24px;
+  --font-size-large: 32px;
 }
 
 * {
@@ -29,111 +42,16 @@
   color: var(--dark-main-color);
 }
 
-/*GOOGLE ICONS*/
-
-.material-icons-outlined {
-  vertical-align: text-bottom;
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+html,body{
+  background-color: var(--background-color);
 }
 
-/*GENERAL CONTROLS STYLES*/
-input,
-button,
-textarea,
-select {
-  background-color: var(--default-background);
-  border: 1.5px solid var(--main-color);
-  border-radius: 8px;
-  height: 3.5em;
-  outline: none;
-  padding: var(--padding-input);
-  width: 100%;
+.flex-row{
+  display: flex;
+  justify-content: center;
 }
 
-
-input:focus,
-button:focus,
-textarea:focus,
-select:focus {
-  outline: 1px solid var(--main-color);
-}
-
-a{
-  color: var(--dark-main-color); 
-  cursor: pointer;
-}
-
-a:hover{
-  color: var(--light-main-color);
-  text-decoration: underline;
-}
-
-button {
-  background-color: var(--main-color);
-  /* border: 2.5px solid var(--main-color); */
-  cursor: pointer;
-  color:var(--white);
-  margin-top: var(--space-top-bottom);
-}
-
-button:hover{
-  background-color: var(--default-background);
-  border: 1.5px solid var(--main-color);
-  color: var(--black);
-}
-
-h1,h2,h3{
-  font-weight: 600;
-}
-
-textarea {
-  height: 6em;
-}
-
-
-/*CUSTOM CONTROLS*/
-.input-field {
+.flex-column{
   display: flex;
   flex-direction: column;
-}
-
-.input-field {
-  margin-top: 1.5em;
-}
-
-.input-field:first-child{
-  margin-top: 0;
-}
-
-.input-field label {
-  font-weight: 500;
-  margin-bottom: 0.2em;
-}
-
-
-/*PAGES CONTAINERS*/
-.page-main-container {
-  padding: var(--padding-left-right);
-  width: 100%;
-}
-  
-/*APPLICANT COMPONENTS*/
-.options-container{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.options-container button{
-  color: var(--black);
-  background-color: var(--default-background);
-  margin: 1em 1em 0 0;
-  white-space:nowrap;
-  width: fit-content;
-  height: fit-content;
-}
-
-.options-container button:hover{
-  color: var(--white);
-  background-color: var(--main-color);
-  
 }

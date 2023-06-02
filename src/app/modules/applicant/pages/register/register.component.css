@@ -1,7 +1,6 @@
-.page-main-container{
+/* .page-main-container{
     display: flex;
     justify-content: center;
-    /* padding: var(--space-top-bottom) var(--space-content-border-horizontal); */
     width: 100%;
 }
 
@@ -32,8 +31,6 @@
 personal-info-form, medical-info-form, job-profile-form, job-history-and-reference-form{
     margin-top: var(--space-top-bottom);
     width: 100%;  
-    /*affects .compnent-main-container inside*/
-    /* background-color: blue; */
 }
 medical-info-form, job-profile-form, job-history-and-reference-form{
 
@@ -49,7 +46,6 @@ medical-info-form, job-profile-form, job-history-and-reference-form{
     width: 100%;
 }
 
-/*"previous" button style*/
 .previous{
     color: var(--black);
     background-color: var(--default-background);
@@ -76,9 +72,8 @@ medical-info-form, job-profile-form, job-history-and-reference-form{
   }
 
 
-/*RESPONSIVE CODE*/
 @media (max-width: 910px) {
     .page-main-container .flex-center{
         width: 100%;
     }
-}
+} */

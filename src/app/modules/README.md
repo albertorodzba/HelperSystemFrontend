@@ -1,3 +1,3 @@
 # DESCRIPTION
 
-Contains the modules used by the system
+Contains the features of the system
