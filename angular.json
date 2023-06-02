@@ -19,8 +19,6 @@
             "polyfills": [
               "zone.js"
             ],
-            "optimization": true,
-            "buildOptimizer": true,
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
