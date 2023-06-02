@@ -3,19 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { ApplicantRoutingModule } from './applicant-routing.module';
 import { PersonalInfoFormComponent } from './components/personal-info-form/personal-info-form.component';
-import { ApplicantRegisterComponent } from './pages/applicant-register/applicant-register.component';
+import { RegisterComponent } from './pages/register/register.component';
 import { MedicalInfoFormComponent } from './components/medical-info-form/medical-info-form.component';
-import { WorkPreferencesFormComponent } from './components/work-preferences-form/work-preferences-form.component';
-import { WorkExperienceReferencesFormComponent } from './components/work-experience-references-form/work-experience-references-form.component';
+import { JobProfileFormComponent } from './components/job-profile-form/job-profile-form.spec';
+import { JobHistoryAndReferenceFormComponent } from './components/job-history-and-reference/job-history-and-reference-form.component';
 
 
 @NgModule({
   declarations: [
     PersonalInfoFormComponent,
-    ApplicantRegisterComponent,
+    RegisterComponent,
     MedicalInfoFormComponent,
-    WorkPreferencesFormComponent,
-    WorkExperienceReferencesFormComponent  
+    JobProfileFormComponent,
+    JobHistoryAndReferenceFormComponent  
   ],
   imports: [
     CommonModule,

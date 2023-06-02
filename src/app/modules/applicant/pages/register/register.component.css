@@ -29,13 +29,13 @@
 }
 
 
-personal-info-form, medical-info-form, work-preferences-form, work-experience-references-form{
+personal-info-form, medical-info-form, job-profile-form, job-history-and-reference-form{
     margin-top: var(--space-top-bottom);
     width: 100%;  
     /*affects .compnent-main-container inside*/
     /* background-color: blue; */
 }
-medical-info-form, work-preferences-form, work-experience-references-form{
+medical-info-form, job-profile-form, job-history-and-reference-form{
 
     display: none;
 }

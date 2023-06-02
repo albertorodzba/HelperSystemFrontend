@@ -14,8 +14,8 @@
 
     <personal-info-form [ngClass]="{'form-visible ': currentForm == 1, 'form-invisible': currentForm !== 1}"></personal-info-form>
     <medical-info-form  [ngClass]="{'form-visible ': currentForm == 2}"></medical-info-form>
-    <work-preferences-form  [ngClass]="{'form-visible ': currentForm == 3}"></work-preferences-form>
-    <work-experience-references-form [ngClass]="{'form-visible ': currentForm == 4}"></work-experience-references-form>
+    <job-profile-form  [ngClass]="{'form-visible ': currentForm == 3}"></job-profile-form>
+    <job-history-and-reference-form [ngClass]="{'form-visible ': currentForm == 4}"></job-history-and-reference-form>
     
     <div class="buttons">
         <button (click)="previousForm()" type="button" class="previous">Atrás</button>

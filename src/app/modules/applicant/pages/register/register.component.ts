@@ -1,11 +1,11 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-applicant-register',
-  templateUrl: './applicant-register.component.html',
-  styleUrls: ['./applicant-register.component.css']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
-export class ApplicantRegisterComponent implements AfterViewInit {
+export class RegisterComponent implements AfterViewInit {
   @ViewChild('progressBar') progressBar!: ElementRef <HTMLDivElement>;
   currentForm: number = 1;
   totalForms: number = 4;
