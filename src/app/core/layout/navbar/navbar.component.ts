@@ -39,8 +39,8 @@ export class NavbarComponent implements AfterViewInit {
       this.dropdown.nativeElement.appendChild(this.optionsSecond.nativeElement);
     }
     else{
-      this.dropdown.nativeElement.removeChild(this.optionsFirst.nativeElement);
-      this.dropdown.nativeElement.removeChild(this.optionsSecond.nativeElement)
+      // this.dropdown.nativeElement.removeChild(this.optionsFirst.nativeElement);
+      // this.dropdown.nativeElement.removeChild(this.optionsSecond.nativeElement)
 
       this.navbar.nativeElement.appendChild(this.optionsFirst.nativeElement)
       this.navbar.nativeElement.appendChild(this.optionsSecond.nativeElement);
