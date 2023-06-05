@@ -1,131 +1,127 @@
-<div class="">
+<div class="container">
+  <h2 class="container__title">Información personal y de contacto</h2>
 
-  <form action="" class="" autocomplete="off">
-    <h2>Información personal y de contacto</h2>
-    <div class="">
-      <label for="fullname">Nombre completo</label>
-      <input type="text" id="fullname" />
+  <form action="" class="form" autocomplete="off">
+    <div class="form__form-field">
+      <label class="form__label" for="fullname">Nombre completo</label>
+      <input class="form__input-text" type="text" id="fullname" />
     </div>
   
-    <div class="">
-      <label for="about-me"
+    <div class="form__form-field">
+      <label class="form__label" for="about-me"
         >¿Quieres describirte? ¿Necesitas específicar algo?</label>
-      <textarea type="text" id="about-me" style="resize: none"></textarea>
+      <textarea class="form__input-text" type="text" id="about-me" style="resize: none"></textarea>
     </div>
   
-    <div class="">
-      <label for="birthdate">Introduce tu fecha de nacimiento</label>
-      <input type="date" id="birthdate" />
+    <div class="form__form-field">
+      <label class="form__label" for="birthdate">Introduce tu fecha de nacimiento</label>
+      <input class="form__input-text" type="date" id="birthdate" />
     </div>
   
-    <div class="">
-      <label for="age">Introduce tu edad</label>
-      <input type="number" id="age" />
+    <div class="form__form-field">
+      <label class="form__label" for="age">Introduce tu edad</label>
+      <input class="form__input-text" type="number" id="age" />
     </div>
   
-    <div class="">
-      <label for="gender">¿Con que género te identificas</label>
+    <div class="form__form-field">
+      <label class="form__label" for="gender">¿Con que género te identificas</label>
       <!--Aqui va un if con todos los generos guardados en la bd-->
-      <select id="gender">
-        <option value="1">Masculino</option>
-        <option value="2">Femenino</option>
-        <option value="3">Femenino</option>
-        <option value="4">No binario</option>
-        <option value="5">Otro/prefiero no decir</option>
+      <select class="form__select" id="gender">
+        <option class="form__option" value="1">Masculino</option>
+        <option class="form__option" value="2">Femenino</option>
+        <option class="form__option" value="3">Femenino</option>
+        <option class="form__option" value="4">No binario</option>
+        <option class="form__option" value="5">Otro/prefiero no decir</option>
       </select>
     </div>
   
-    <div class="">
-      <label for="street">Calle</label>
-      <input type="text" id="street" />
+    <div class="form__form-field">
+      <label class="form__label" for="street">Calle</label>
+      <input class="form__input-text" type="text" id="street" />
     </div>
   
-    <div class="">
-      <label for="neighborhood">Colonia</label>
-      <input type="text" id="neighborhood" />
+    <div class="form__form-field">
+      <label class="form__label" for="neighborhood">Colonia</label>
+      <input class="form__input-text" type="text" id="neighborhood" />
     </div>
   
-    <div class="">
-      <label for="city">Ciudad</label>
-      <input type="text" id="city" />
+    <div class="form__form-field">
+      <label class="form__label" for="city">Ciudad</label>
+      <input class="form__input-text" type="text" id="city" />
     </div>
   
-    <div class="">
-      <label for="state">Estado</label>
-      <input type="text" id="state" />
+    <div class="form__form-field">
+      <label class="form__label" for="state">Estado</label>
+      <input class="form__input-text" type="text" id="state" />
     </div>
   
-    <div class="">
-      <label for="zip-code">Código postal</label>
-      <input type="text" id="zip-code" />
+    <div class="form__form-field">
+      <label class="form__label" for="zip-code">Código postal</label>
+      <input class="form__input-text" type="text" id="zip-code" />
     </div>
   
-    <div class="">
-      <label for="phonenumber-1">Télefono 1</label>
-      <input type="tel" id="phonenumber-1" />
+    <div class="form__form-field">
+      <label class="form__label" for="phonenumber-1">Télefono 1</label>
+      <input class="form__input-text" type="tel" id="phonenumber-1" />
     </div>
   
-    <div class="">
-      <label for="phonenumber-2">Télefono 2</label>
-      <input type="tel" id="phonenumber-2" />
+    <div class="form__form-field">
+      <label class="form__label" for="phonenumber-2">Télefono 2</label>
+      <input class="form__input-text" type="tel" id="phonenumber-2" />
     </div>
   
-    <div class="">
-      <label for="body-piecing">¿Tienes perforacionesa visibles?</label>
-      <select id="body-piercing">
-        <option value="1">Sí</option>
-        <option value="0" selected>No</option>
+    <div class="form__form-field">
+      <label class="form__label" for="body-piecing">¿Tienes perforacionesa visibles?</label>
+      <select class="form__select" id="body-piercing">
+        <option class="form__option" value="1">Sí</option>
+        <option class="form__option" value="0" selected>No</option>
       </select>
     </div>
   
-    <div class="">
-      <label for="tattoos">¿Tienes tatuajes visibles?</label>
-      <select id="tattoos">
-        <option value="1">Sí</option>
-        <option value="0" selected>No</option>
+    <div class="form__form-field">
+      <label class="form__label" for="tattoos">¿Tienes tatuajes visibles?</label>
+      <select class="form__select" id="tattoos">
+        <option class="form__option" value="1">Sí</option>
+        <option class="form__option" value="0" selected>No</option>
       </select>
     </div>
   
-    <div class="">
-      <label for="children">¿Tienes hijos?</label>
-      <input type="text" id="children" />
+    <div class="form__form-field">
+      <label class="form__label" for="children">¿Tienes hijos?</label>
+      <input class="form__input-text" type="text" id="children" />
     </div>
   
-    <div class="">
-      <label for="marital-status">Estado civil</label>
-      <select id="marital-status">
-        <option value="1">Soltero/a</option>
-        <option value="2">Casado/a</option>
-        <option value="3">Viudo/a</option>
-        <option value="4">Unión libre</option>
-        <option value="5">Divorciado/a</option>
-        <option value="6">Seperado/a</option>
+    <div class="form__form-field">
+      <label class="form__label" for="marital-status">Estado civil</label>
+      <select class="form__select" id="marital-status">
+        <option class="form__option" value="1">Soltero/a</option>
+        <option class="form__option" value="2">Casado/a</option>
+        <option class="form__option" value="3">Viudo/a</option>
+        <option class="form__option" value="4">Unión libre</option>
+        <option class="form__option" value="5">Divorciado/a</option>
+        <option class="form__option" value="6">Seperado/a</option>
       </select>
     </div>
   
-    <div class="">
-      <label for="education-level">Ultimo grado de estudios</label>
-      <select name="" id="education-level">
-        <option value="1">Primaria</option>
-        <option value="2">Secundaria</option>
-        <option value="3">Bachillerato/Preparatoria</option>
-        <option value="4">Licenciatura</option>
-        <option value="5">Universidad trunca</option>
-        <option value="6">Carrera técnica</option>
-        <option value="7">Maestría</option>
-        <option value="8">Doctorado</option>
-        <option value="9">Sin estudios</option>
+    <div class="form__form-field">
+      <label class="form__label" for="education-level">Ultimo grado de estudios</label>
+      <select class="form__select" name="" id="education-level">
+        <option class="form__option" value="1">Primaria</option>
+        <option class="form__option" value="2">Secundaria</option>
+        <option class="form__option" value="3">Bachillerato/Preparatoria</option>
+        <option class="form__option" value="4">Licenciatura</option>
+        <option class="form__option" value="5">Universidad trunca</option>
+        <option class="form__option" value="6">Carrera técnica</option>
+        <option class="form__option" value="7">Maestría</option>
+        <option class="form__option" value="8">Doctorado</option>
+        <option class="form__option" value="9">Sin estudios</option>
       </select>
     </div>
   
-    <div class="">
-      <label for="id-job-status">pendiente job status</label>
-      <input type="text" id="id-job-status" />
+    <div class="form__form-field">
+      <label class="form__label" for="id-job-status">pendiente job status</label>
+      <input class="form__input-text" type="text" id="id-job-status" />
     </div>
-  
-    
 
-  
   </form>
 </div>
-

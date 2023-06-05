@@ -20,7 +20,7 @@
 :root{
   /* --background-color: #f8f8ff; */
   --background-color: white;
-
+  --border-radius: 2px;
   --black: #282828;
   --white: #e6e6e6;
   --padding-X: 3em;

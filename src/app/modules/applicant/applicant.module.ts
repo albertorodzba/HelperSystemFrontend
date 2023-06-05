@@ -5,7 +5,7 @@ import { ApplicantRoutingModule } from './applicant-routing.module';
 import { PersonalInfoFormComponent } from './components/personal-info-form/personal-info-form.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { MedicalInfoFormComponent } from './components/medical-info-form/medical-info-form.component';
-import { JobProfileFormComponent } from './components/job-profile-form/job-profile-form.spec';
+import { JobProfileFormComponent } from './components/job-profile-form/job-profile-form.component';
 import { JobHistoryAndReferenceFormComponent } from './components/job-history-and-reference/job-history-and-reference-form.component';
 
 
