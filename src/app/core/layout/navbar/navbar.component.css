@@ -111,3 +111,17 @@ hr {
     display: block;
   }
 } */
+
+
+.navbar{}
+.navbar__logo{}
+.navbar__options{}
+.navbar__option{}
+.navbar__icon{}
+.navbar__hr{}
+.navbar__separator{}
+.navbar__dropdown{}
+.navbar__dropdown--visible{}
+.navbar__icon-container{}
+.navbar__icon{}
+.navbar__menu-label{}

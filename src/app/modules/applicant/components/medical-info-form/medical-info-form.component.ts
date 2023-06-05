@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./medical-info-form.component.css']
 })
 export class MedicalInfoFormComponent {
-
+  conditionList: string[] = ["Puedo subir escaleras"];
+  allergieList: string[] = ["Tortugas"];
+  disabilityList: string[] = ["Amputación de brazo"]
 }

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 
 import { ApplicantModule } from './modules/applicant/applicant.module';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 
@@ -22,7 +23,7 @@ import { ApplicantModule } from './modules/applicant/applicant.module';
 
     CoreModule
   ],
-  providers: [],
+  providers: [/*{provide: LocationStrategy, useClass: HashLocationStrategy}*/],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

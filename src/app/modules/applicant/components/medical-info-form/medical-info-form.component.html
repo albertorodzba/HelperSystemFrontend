@@ -1,78 +1,54 @@
-<div class="">
-  <h2>Información médica</h2>
-  <form action="" autocomplete="off" class="">
-    <div class="">
-      <label for="applicant-condition"
-        >Escoge tantas opciones con las que te sientas identificado/a</label
-      >
+<div class="container">
+  <h2 class="container__title">Información médica</h2>
 
-      <div class="" id="applicant-condition">
-        <button class="" type="button" >
-          Puedo subir escaleras
+  <form action="" autocomplete="off" class="form">
+
+    <div class="form__form-field">
+      <label class="form__label" for="applicant-condition">Escoge tantas opciones con las que te sientas identificado/a</label>
+
+      <div class="form__options-container" id="applicant-condition">
+
+        <button *ngFor="let condition of conditionList" class="option-button" type="button">
+          {{condition}}
         </button>
-        <button class="" type="button" >
-          Hago ejercicio por lo menos 2 veces a la semana
-        </button>
-        <button class="" type="button" >
-          Me fatigo rápido
-        </button>
-        <button class="" type="button" >
-          Puedo levantar objetos pesadas
-        </button>
+      
       </div>
     </div>
 
-    <div class="">
-      <label for="applicant-allergie"
-        >¿Tienes alergias? Seleccionalas, de lo contrario omite esta
-        sección</label
-      >
+    <div class="form_form-field">
+      <label class="form__label" for="applicant-allergie">¿Tienes alergias? Seleccionalas, de lo contrario omite esta
+        sección</label>
 
-      <div class="" id="applicant-allergie">
-        <button class="" type="button">
-          Perros
+      <div class="form__options-container" id="applicant-allergie">
+
+        <button *ngFor="let allergie of allergieList" class="option-button" type="button">
+          {{allergie}}
         </button>
-        <button class="" type="button">
-          Gatos
-        </button>
-        <button class="" type="button">
-          Polvo
-        </button>
-        <button class="" type="button">
-          Tortugas
-        </button>
+       
       </div>
     </div>
 
-    <div class="">
-      <label for="applicant-disability"
-        >Padeces de alguna condicion que te limite en algunas actividades?,
-        Seleccionalas, de lo contrario omite esta sección</label
-      >
-      <div class="" id="applicant-disability">
-        <button class="" type="button" >
-          Amputación de brazo
+    <div class="form__form-field">
+      <label class="form__label" for="applicant-disability">Padeces de alguna condicion que te limite en algunas actividades?,
+        Seleccionalas, de lo contrario omite esta sección</label>
+
+      <div class="form__options-container" id="applicant-disability">
+
+        <button *ngFor="let disability of disabilityList" class="form__option-button" type="button">
+          {{disability}}
         </button>
-        <button class="" type="button" >
-          Amputación de pierna
-        </button>
-        <button class="" type="button" >
-          Autismo
-        </button>
-        <button class="" type="button" >
-          Discapacidad auditiva
-        </button>
+
       </div>
     </div>
 
-    <div class="">
-      <label for="weight">Peso en kilogramos</label>
-      <input type="text" id="weight" />
+    <div class="form__form-field">
+      <label class="form__label" for="weight">Peso en kilogramos</label>
+      <input class="form__input-text" type="text" id="weight" />
     </div>
 
-    <div class="">
-      <label for="height">Altura</label>
-      <input type="text" id="heigth" />
+    <div class="form__form-field">
+      <label class="form__label" for="height">Altura</label>
+      <input class="form__input-text" type="text" id="heigth" />
     </div>
   </form>
 </div>
